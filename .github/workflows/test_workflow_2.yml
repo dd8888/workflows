@@ -1,0 +1,11 @@
+name: Two Workflow
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello John
+        id: Hello
+        uses: kevinEliezer/GitAction@v1.0.0
+        with:
+          FIRST_NAME: "World"
